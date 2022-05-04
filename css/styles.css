@@ -403,9 +403,10 @@ button {
   transition-timing-function: var(--timing-function);
 }
 
-.form-input:hover,
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
   border: 1px solid var(--hover);
+  outline: none;
 }
 
 .form-input:hover ~ .modal-icon,
@@ -438,6 +439,7 @@ button {
 .comment:hover,
 .comment:focus {
   border: 1px solid var(--hover);
+  outline: none;
 }
 
 textarea::placeholder {

@@ -273,7 +273,7 @@ button {
 
   color: var(--add-color);
   background-color: var(--hover);
-
+  border: var(--hover);
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -289,7 +289,7 @@ button {
 
 .backdrop {
   position: fixed;
-
+  z-index: 100;
   top: 0;
   right: 0;
   width: 100%;
@@ -377,6 +377,14 @@ button {
   margin-bottom: 10px;
   color: var(--axcent-color);
 }
+.form-field:last-child {
+  margin-bottom: 20px;
+}
+
+.form-checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
 .form-label {
   margin-bottom: 4px;
@@ -449,12 +457,21 @@ textarea::placeholder {
 .label-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 
   letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+
+.agreement {
+  color: var(--hover);
+  margin-left: 2px;
+  text-decoration: underline;
 }
 
 .checkbox {
